@@ -6,4 +6,10 @@ function returnsANamedFunction(number){
 return Math.round
 }
 
-    let returnsAnAnonymousFunction  = () => console.log('Anonymous function');
+    let returnsAnAnonymousFunction  = function(x){
+    return x + x
+    } 
+
+    let mask = returnsAnAnonymousFunction
+
+    mask();
